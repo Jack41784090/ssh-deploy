@@ -60,6 +60,7 @@ const rsyncCli = async ({
   const defaultOptions = {
     ssh: true,
     recursive: true,
+    delete: true,
     onStdout: (data) => console.log(data.toString()),
     onStderr: (data) => console.error(data.toString())
   };
